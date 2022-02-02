@@ -8,7 +8,7 @@ if [ -e $HOME/anaconda3/bin/conda ]; then
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib/cuda-11.0/lib64"
 fi
 if [ -e $HOME/root/bin/thisroot.sh ]; then
-    source ${WORK_DIR}/root/bin/thisroot.sh
+    source $HOME/root/bin/thisroot.sh
 fi
 if [ -e $HOME/Geant4/bin/geant4.sh ]; then
     source $HOME/Geant4/bin/geant4.sh
