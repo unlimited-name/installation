@@ -1,5 +1,7 @@
 echo "==========Hello World !============"
 sudo apt-get update && apt-get install curl git wget
+cd ${HOME}
+mkdir installation
 export WORK_DIR=${HOME}/installation
 echo "==============================="
 
@@ -7,7 +9,7 @@ echo "installing anaconda......"
 
 cd ${WORK_DIR}
 #自带python3.6的Anaconda大约是2018年的版本
-curl -O https://https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
+curl -O https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 chmod +x Anaconda3-2018.12-Linux-x86_64.sh
 ./Anaconda3-2018.12-Linux-x86_64.sh -b -p ${HOME}/anaconda3
 rm Anaconda3-2018.12-Linux-x86_64.sh
