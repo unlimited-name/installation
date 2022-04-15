@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "==========Hello World !============"
 #sudo apt-get update && apt-get install curl git wget
-export WORK_DIR=${HOME}/installation
+export WORK_DIR=${HOME}
 echo "==============================="
 
 echo "installing CUDA......"

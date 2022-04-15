@@ -1,8 +1,8 @@
 echo "==========Hello World !============"
-sudo apt-get update && apt-get install curl git wget
+sudo apt-get update && apt-get install curl git wget cmake
 cd ${HOME}
-mkdir installation
-export WORK_DIR=${HOME}/installation
+#mkdir installation
+export WORK_DIR=${HOME}
 echo "==============================="
 
 echo "installing anaconda......"
