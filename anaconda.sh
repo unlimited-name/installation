@@ -1,5 +1,6 @@
 echo "==========Hello World !============"
 sudo apt-get update && apt-get install curl git wget cmake
+sudo cp chroma_env.sh /etc/profile.d/
 cd ${HOME}
 #mkdir installation
 export WORK_DIR=${HOME}
@@ -20,7 +21,6 @@ conda install -y -c anaconda boost cmake
 #conda install -y -c conda-forge pymesh2
 
 #dos2unix chroma_env.sh
-sudo cp chroma_env.sh /etc/profile.d/
 source /etc/profile
 
 echo "anaconda installed!"
