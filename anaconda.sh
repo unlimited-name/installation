@@ -1,5 +1,5 @@
 echo "==========Hello World !============"
-sudo apt-get update && apt-get install curl git wget cmake
+sudo apt-get update && apt-get install curl wget cmake
 sudo cp chroma_env.sh /etc/profile.d/
 cd ${HOME}
 #mkdir installation
