@@ -1,8 +1,11 @@
 echo "==========Hello World !============"
 export WORK_DIR=${HOME}
 sudo cp g4py.4.10.05.p01.patch ${WORK_DIR}
-echo "==============================="
+sudo apt-get update
+set -x; buildDeps='dpkg-dev gcc g++ binutils libx11-dev libxpm-dev libxft-dev libxext-dev libgsl-dev libfftw3-dev libpcre3-dev libxerces-c-dev libxmu-dev libxi-dev freeglut3-dev libboost-all-dev'
+sudo apt-get install -y $buildDeps
 
+echo "==============================="
 
 echo "installing Geant4......"
 

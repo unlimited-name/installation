@@ -4,12 +4,13 @@ export WORK_DIR=${HOME}
 sudo cp g4py.4.10.05.p01.patch ${WORK_DIR}
 echo "==============================="
 
-echo "installing CUDA......"
+#echo "installing CUDA......"
 
-cd ${HOME}
-wget http://developer.download.nvidia.com/compute/cuda/11.0.2/local_installers/cuda_11.0.2_450.51.05_linux.run
-sudo sh cuda_11.0.2_450.51.05_linux.run
-rm cuda_11.0.2_450.51.05_linux.run
+#cd ${HOME}
+#wget http://developer.download.nvidia.com/compute/cuda/11.0.2/local_installers/cuda_11.0.2_450.51.05_linux.run
+#sudo sh cuda_11.0.2_450.51.05_linux.run
+#rm cuda_11.0.2_450.51.05_linux.run
+
 #sudo systemctl enable nvidia-persistenced
 #sudo cp /lib/udev/rules.d/40-redhat.rules /etc/udev/rules.d 
 #sudo sed -i 's/SUBSYSTEM!="memory",.*GOTO="memory_hotplug_end"/SUBSYSTEM=="*", GOTO="memory_hotplug_end"/' /etc/udev/rules.d/40-redhat.rules
