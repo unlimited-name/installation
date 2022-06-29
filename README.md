@@ -18,14 +18,21 @@ In `setup.sh`, there are several parts stated as following:
 - G4py
 - pymesh
 - chroma
+
 Chroma integrates all of the above. Pymesh is actually ommited in our installation batch. All the jobs concerning meshes are recommended to be finished somewhere else, there is no need to wait for the time-consumer and error-maker aka pymesh installation. 
 
 CUDA Toolkit **MUST** match your GPU and GPU drive version. Aside from CUDA, shell scripts for other parts are also separated in different files, you may try to run them separately but note `g4py.sh` should be executed after `g4.sh` and chroma should be the last part to install. 
 
 ## Tips for self-debugging
 * How to check the GPU drive version
+
 Run `nvidia-smi` will expose the information you need. 
 * Environmental variables
+
 They are written in `chroma_env.sh` and copied to /etc/profile.d. 
 * G4py patch
+
 G4py installation uses a patch file included in the repository. Although we tried to include flexibility of G4 version, the patch file needs to be modified for different versions. 
+* Dockerfile and self-maintainace
+
+The installation batch is written based on the Dockerfile used to build docker images, see [here](https://github.com/BenLand100/chroma/tree/master/installation) for more details. You can also write your own favored bash script with the information provided. 
