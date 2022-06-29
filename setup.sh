@@ -109,3 +109,4 @@ sed -i 's/VIRTUAL_ENV/CONDA_PREFIX/g' setup.py #use anaconda env instead
 python setup.py develop
 
 echo "chroma installed!"
+echo "restart the shell to finish installation"

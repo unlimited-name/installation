@@ -20,9 +20,8 @@ conda init
 conda install -y -c anaconda boost cmake
 #conda install -y -c conda-forge pymesh2
 
-#dos2unix chroma_env.sh
 source /etc/profile
 
 echo "anaconda installed!"
-echo "restart to continue installation"
+echo "restart the shell to continue installation"
 echo "==============================="
