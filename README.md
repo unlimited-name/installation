@@ -8,7 +8,7 @@ When creating the Virtual Machine Instance, remember to use Ubuntu system image;
 ## Steps to install
 With a new Ubuntu machine, first run `sudo apt-get update && sudo apt-get install -y git` to acquire git. Then clone this repository: `git clone https://github.com/unlimited-name/installation && cd installation`
 
-First of all, use `chmod +x *.sh` and `./anaconda.sh` to install anaconda. After installation, you may need to restart the shell or use `source /etc/profile` to refresh the environment. Then run `./setup.sh` to finish chroma installation. **Note you need to check CUDA version of the GPU drive.** You will need to wait for seconds and type `accept`, and then choose CUDA Toolkit for installation. After this, you may leave and wait for a moment until the installation finishs automatically. 
+First of all, use `chmod +x *.sh` and `./anaconda.sh` to install anaconda. After installation, you may need to restart the shell or use `source /etc/profile` to refresh the environment. Then run `./setup.sh` to finish chroma installation. **Note you need to check CUDA version of the GPU drive.** You will need to wait for seconds and type `accept`, and then choose CUDA Toolkit for installation. After this, you may leave and wait for a moment until the installation finishes automatically. 
 
 ### some explanation
 In `setup.sh`, there are several parts stated as following: 
@@ -35,4 +35,4 @@ They are written in `chroma_env.sh` and copied to /etc/profile.d.
 G4py installation uses a patch file included in the repository. Although we tried to include flexibility of G4 version, the patch file needs to be modified for different versions. 
 * Dockerfile and self-maintainace
 
-The installation batch is written based on the Dockerfile used to build docker images, see [here](https://github.com/BenLand100/chroma/tree/master/installation) for more details. You can also write your own favored bash script with the information provided. 
+The installation batch is written based on the Dockerfile used to build docker images, see [here](https://github.com/BenLand100/chroma/tree/master/installation) for more details. You can also write your own favored shell script with the information provided. 
