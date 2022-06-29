@@ -1,8 +1,12 @@
+export WORK_DIR=${HOME}
+export DEBIAN_FRONTEND=noninteractive
+export VERSION_GEANT4=10.05.p01
 echo "installing G4py......"
 
-cd ${WORK_DIR}
-mkdir ${WORK_DIR}/geant4.${VERSION_GEANT4} && cd ${WORK_DIR}/geant4.${VERSION_GEANT4}
-sudo cp ${WORK_DIR}/g4py.4.10.05.p01.patch ./
+#cd ${WORK_DIR}
+#mkdir ${WORK_DIR}/geant4.${VERSION_GEANT4} && cd ${WORK_DIR}/geant4.${VERSION_GEANT4}
+cd ${WORK_DIR}/geant4.${VERSION_GEANT4}
+sudo cp ${HOME}/installation/g4py.4.10.05.p01.patch ./
 git apply g4py.4.10.05.p01.patch
 mkdir ${WORK_DIR}/geant4.${VERSION_GEANT4}/build-g4py && cd ${WORK_DIR}/geant4.${VERSION_GEANT4}/build-g4py
 export BOOST_ROOT=${HOME}/anaconda3
@@ -15,11 +19,6 @@ make install
 
 cd ${WORK_DIR}
 rm -rf ${WORK_DIR}/geant4.${VERSION_GEANT4}
-
-if [ -e $HOME/Geant4/bin/geant4.sh ]; then
-    source $HOME/Geant4/bin/geant4.sh
-    export PYTHONPATH="$HOME/Geant4/lib:$PYTHONPATH"
-fi
 
 echo "G4py installed!"
 echo "==============================="
